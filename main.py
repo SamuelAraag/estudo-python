@@ -1,13 +1,14 @@
-print("TABUADA")
-num = int(input("Digite um número e dê enter para ver a tabuada5: "))
+##Mostrar salário do funcionário com 15% de aumeto
 
-if num:
-    print("A tabuada do número {} é: ".format(num))
-    base = 11
-    i = 1
+import locale
 
-    while i < base:
-        print("{} x {} é igual a {}".format(num, i, num*i))
-        i += 1
+aumento = 10
+salario_base = int(input("Digite o seu salário atual: "))
+valor_aumento = (salario_base * aumento) / 100
+valor_total = salario_base + valor_aumento
 
-print("Obrigado por acessar a nossa calculadora.")
+locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
+
+salario_calculado = locale.currency(valor_total, grouping=True, symbol=None)
+
+print("O seu novo salário será: R$:{}".format(salario_calculado))
