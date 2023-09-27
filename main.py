@@ -1,11 +1,11 @@
-##Mostrar salário do funcionário com 15% de aumeto
+##Mostrar salário do funcionário com 15% de aumento
 
 import locale
 
-aumento = 10
-salario_base = int(input("Digite o seu salário atual: "))
-valor_aumento = (salario_base * aumento) / 100
-valor_total = salario_base + valor_aumento
+AUMENTO = 15
+SALARIO_BASE = int(input("Digite o seu salário atual: "))
+valor_aumento = (SALARIO_BASE * AUMENTO) / 100
+valor_total = SALARIO_BASE + valor_aumento
 
 locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
 
