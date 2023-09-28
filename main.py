@@ -1,14 +1,11 @@
 ##Mostrar salário do funcionário com 15% de aumento
+##60 reais por dia
+##0,15 por KM
 
-import locale
+dias = int(input("Quantos dias você ficou com o carro: "))
+km = int(input("Quantos kilometros você andou com o carro: "))
 
-AUMENTO = 15
-SALARIO_BASE = int(input("Digite o seu salário atual: "))
-valor_aumento = (SALARIO_BASE * AUMENTO) / 100
-valor_total = SALARIO_BASE + valor_aumento
+valor_total_dias = dias * 60
+valor_total_km = km * 0.15
 
-locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
-
-salario_calculado = locale.currency(valor_total, grouping=True, symbol=None)
-
-print("O seu novo salário será: R$:{}".format(salario_calculado))
+print("O total a pagar é: R${:.2f}".format(valor_total_km + valor_total_dias))
