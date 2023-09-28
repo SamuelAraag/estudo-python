@@ -1,4 +1,3 @@
-##Mostrar salário do funcionário com 15% de aumento
 ##60 reais por dia
 ##0,15 por KM
 
