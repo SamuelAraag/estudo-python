@@ -1,10 +1,10 @@
-##60 reais por dia
-##0,15 por KM
+##importando bibliotecas
 
-dias = int(input("Quantos dias você ficou com o carro: "))
-km = int(input("Quantos kilometros você andou com o carro: "))
+##importa tudo, import math import sqrt [somente esse metodo], import math import sqrt, pow [importa varios metodos]
+import math
 
-valor_total_dias = dias * 60
-valor_total_km = km * 0.15
+num = int(input("Digite um número: "))
 
-print("O total a pagar é: R${:.2f}".format(valor_total_km + valor_total_dias))
+raiz = math.sqrt(num)
+
+print("A raiz quadrada de {} é {}".format(num, math.ceil(math.sqrt(raiz))))
