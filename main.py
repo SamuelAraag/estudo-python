@@ -52,8 +52,7 @@ nomePessoa = input("Digite o nome da pessoa: ")
 contemSilva = False
 
 for e in nomePessoa.split():
-    print(e)
-    if e is 'silva':
+    if e in 'silva':
         contemSilva = True
 
 if contemSilva:
